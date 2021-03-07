@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --dark-cyan: #19a2ae;
+    --dark-blue: #2d3248;
+    --grayish-blue: #6a6f81;
+    --gray: #969696;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+body{
+    background: var(--dark-cyan);
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+hr{
+    border-style: none;
+    background-color: #d5d3d3;
+    height: 1px;
+    margin-bottom: 22px;
+}
+
+
+
+/* ===============TYPOGRAPHY================== */
+.bold{
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.regular{
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+.place{
+    margin-top: 13px;
+    margin-bottom: 1.6em;
+    font-size: .785rem;
+}
+.small-text{
+    color: var(--grayish-blue);
+    font-size: .655rem;
+    letter-spacing: 1.5px;
+}
+/* ==============LAYOUT============== */
+
+.header-img img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    margin-top: -58px;
+    border-radius: 50%;
+    border: 5px solid #fff; 
+    margin-bottom: 18px;
+}
+
+.name{
+text-align: center;
+margin-top: .5em;
+}
+
+.container{
+    width: 88%;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px 30px;
+}
+
+.info{
+    text-align: center;
+}
+
+.top{
+    position: fixed;
+    z-index: -1;
+    right: 40%;
+    top: -82%;
+}
+
+.bottom{
+    position: fixed;
+    z-index: -1;
+    left: 50%;
+    top: 45%;
+}
+
+@media( min-width:475px){
+    .container{
+        width: 350px;
+    }
+    .top{
+        position: fixed;
+        z-index: -1;
+        left: 0%;
+        top: -50%;
+    }
+    .bottom{
+        position: fixed;
+        z-index: -1;
+        right: -1%;
+        bottom: -52%;
+    }
+    
+}
